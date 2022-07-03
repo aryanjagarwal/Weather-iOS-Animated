@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A5F206B28714F140028BA0E /* TapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F206A28714F140028BA0E /* TapBar.swift */; };
 		7A65184B286FE7830032684A /* Weather_iOS_AnimatedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A65184A286FE7830032684A /* Weather_iOS_AnimatedApp.swift */; };
 		7A65184D286FE7830032684A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A65184C286FE7830032684A /* ContentView.swift */; };
 		7A65184F286FE7860032684A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A65184E286FE7860032684A /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A5F206A28714F140028BA0E /* TapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBar.swift; sourceTree = "<group>"; };
 		7A651847286FE7830032684A /* Weather-iOS-Animated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather-iOS-Animated.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A65184A286FE7830032684A /* Weather_iOS_AnimatedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_iOS_AnimatedApp.swift; sourceTree = "<group>"; };
 		7A65184C286FE7830032684A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		7A65185C286FF1860032684A /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				7A5F206A28714F140028BA0E /* TapBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			files = (
 				7A65184D286FE7830032684A /* ContentView.swift in Sources */,
 				7A651862286FF4BE0032684A /* HomeView.swift in Sources */,
+				7A5F206B28714F140028BA0E /* TapBar.swift in Sources */,
 				7A651860286FF3130032684A /* Extensions.swift in Sources */,
 				7A65184B286FE7830032684A /* Weather_iOS_AnimatedApp.swift in Sources */,
 			);

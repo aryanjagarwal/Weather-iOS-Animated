@@ -7,10 +7,23 @@
 
 import SwiftUI
 
-struct TapBar: View {
+import SwiftUI
+
+struct TabBar: View {
     var action: () -> Void
+    
     var body: some View {
         ZStack {
+            // MARK: Arc Shape
+            Arc()
+                .fill(Color.tabBarBackground)
+                .frame(height: 88)
+                .overlay {
+                    // MARK: Arc Border
+                    Arc()
+                        .stroke(Color.tabBarBorder, lineWidth: 0.5)
+                }
+            
             // MARK: Tab Items
             HStack {
                 // MARK: Expand Button
@@ -22,9 +35,10 @@ struct TapBar: View {
                 }
                 
                 Spacer()
+                
                 // MARK: Navigation Button
-                NavigationLink{
-                    
+                NavigationLink {
+                    WeatherView()
                 } label: {
                     Image(systemName: "list.star")
                         .frame(width: 44, height: 44)
@@ -36,13 +50,12 @@ struct TapBar: View {
         }
         .frame(maxHeight: .infinity, alignment: .bottom)
         .ignoresSafeArea()
-        
     }
 }
 
-struct TapBar_Previews: PreviewProvider {
+struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
-        TapBar(action: {})
+        TabBar(action: {})
             .preferredColorScheme(.dark)
     }
 }
